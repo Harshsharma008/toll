@@ -1,9 +1,10 @@
 // import { useState } from 'react'
-import Header from './components/Header'
+import Header from './components/header/Header.jsx';
 // import { Container, Grid, Paper } from '@mui/material';
 import './App.css'
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer.jsx';
 import TollCalculator from './calculator/Calculator';
+import RouteVisualization from './RouteVisualization.jsx';
 
 function App() {
  
@@ -12,6 +13,7 @@ function App() {
     <>
        
       <Header />
+      <RouteVisualization/>
       <TollCalculator/>
 
       {/* <Container maxWidth="xl" sx={{ mt: 4 }}>
