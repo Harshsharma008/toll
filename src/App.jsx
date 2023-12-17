@@ -1,29 +1,48 @@
-import { useState } from 'react'
-
+// import { useState } from 'react'
+import Header from './components/Header'
+import { Container, Grid, Paper } from '@mui/material';
 import './App.css'
+import LeftSide from './components/leftSide/LeftSide';
+import Footer from './components/footer/Footer';
+import TollCalculator from './calculator/Calculator';
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div>
        
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Header />
+      <TollCalculator/>
 
-export default App
+      {/* <Container maxWidth="xl" sx={{ mt: 4 }}>
+        <Grid container spacing={3}> */}
+          {/* Left Side */}
+          {/* <Grid item xs={12} md={6}>
+            <Paper sx={{  height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div >
+                <LeftSide/>
+              </div>
+            
+            </Paper>
+          </Grid> */}
+
+          {/* Right Side */}
+          {/* <Grid item xs={12} md={6}>
+            <Paper sx={{  height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div >
+                Right Side Content
+              </div>
+             
+            </Paper>
+          </Grid>
+        </Grid>
+        
+      </Container> */}
+      <Footer/>
+      </>
+  );
+    }
+  export default App;
+
+
