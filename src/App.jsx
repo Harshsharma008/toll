@@ -1,8 +1,7 @@
 // import { useState } from 'react'
 import Header from './components/Header'
-import { Container, Grid, Paper } from '@mui/material';
+// import { Container, Grid, Paper } from '@mui/material';
 import './App.css'
-import LeftSide from './components/leftSide/LeftSide';
 import Footer from './components/footer/Footer';
 import TollCalculator from './calculator/Calculator';
 
