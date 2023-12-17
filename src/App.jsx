@@ -12,9 +12,9 @@ function App() {
   return (
     <>
        
-      <Header />
+      {/* <Header /> */}
       <RouteVisualization/>
-      <TollCalculator/>
+      {/* <TollCalculator/> */}
 
       {/* <Container maxWidth="xl" sx={{ mt: 4 }}>
         <Grid container spacing={3}> */}
